@@ -1,0 +1,120 @@
+# ========================
+# Go
+# ========================
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/bin/
+/build/
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage.html
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Dependency vendor directory
+vendor/
+
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+
+# ========================
+# Air (Live Reload)
+# ========================
+tmp/
+air.log
+
+# ========================
+# Docker
+# ========================
+.docker/
+
+# ========================
+# Database
+# ========================
+*.db
+*.sqlite
+*.sqlite3
+dump.sql
+*.dump
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/
+
+# ========================
+# OS Files
+# ========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ========================
+# IDE / Editor
+# ========================
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains (GoLand, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Vim / Neovim
+*.swp
+*.swo
+Session.vim
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ========================
+# Uploads / Static Assets
+# ========================
+uploads/
+storage/
+public/uploads/
+
+# ========================
+# Test & Coverage
+# ========================
+coverage/
+.testcache/
