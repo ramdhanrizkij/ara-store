@@ -13,11 +13,11 @@ test:
 	go test ./...
 
 migrate-up:
-	goose -dir migrations postgres "postgres://postgres:secret@localhost:5432/ara_store?sslmode=disable" up
+	go run cmd/migrate/main.go up
 
 migrate-down:
-	goose -dir migrations postgres "postgres://postgres:secret@localhost:5432/ara_store?sslmode=disable" down
-
+	go run cmd/migrate/main.go down
+	
 docker-up:
 	docker-compose up -d
 
